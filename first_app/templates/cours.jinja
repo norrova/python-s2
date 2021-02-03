@@ -1,0 +1,15 @@
+{% extends 'base.jinja' %}
+
+{% block content %}
+    <div class="container" style="display:grid; gap:5px;">
+        {% if cours %}
+            {% for i in cours %}
+                {% for key, value in i.items() %}
+                    <div class="col-12 d-flex bg-primary p-2">
+                        <p>{{key}} - {{value}}</p>
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endblock %}
