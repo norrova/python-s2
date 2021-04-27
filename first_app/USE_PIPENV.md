@@ -7,3 +7,4 @@ export FLASK_APP=<name>.py
 flask run
 export FLASK_DEBUG=0
 ```
+
